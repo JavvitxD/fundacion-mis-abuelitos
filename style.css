@@ -324,6 +324,60 @@ label:focus-visible,
   font-weight: 700;
 }
 
+/* ============ CÓMO AYUDAR ============ */
+.seccion-ayudar {
+  background: linear-gradient(180deg, var(--azul-claro) 0%, var(--azul-claro-suave) 100%);
+}
+
+.ayudar-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.tarjeta-ayuda {
+  background-color: var(--blanco);
+  border-radius: var(--radio);
+  padding: 2.2rem 2rem;
+  text-align: center;
+  box-shadow: var(--sombra);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.tarjeta-ayuda .icono {
+  font-size: 2.6rem;
+  line-height: 1;
+  background-color: var(--azul-claro);
+  width: 84px;
+  height: 84px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.tarjeta-ayuda h3 { font-size: 1.35rem; }
+
+.tarjeta-ayuda .boton { margin-top: auto; }
+
+.lista-donacion {
+  list-style: none;
+  background-color: var(--azul-claro-suave);
+  border-radius: 12px;
+  padding: 1rem 1.6rem;
+  font-size: 1.1rem;
+  text-align: left;
+}
+
+.lista-donacion li { padding: 0.25rem 0; }
+
+.dato-titular { font-size: 1rem; }
+
 /* ============ GALERÍA ============ */
 .galeria-grid {
   display: grid;
@@ -436,6 +490,7 @@ a.tarjeta-contacto:hover { transform: translateY(-6px); }
   .hero-botones { justify-content: center; }
 
   .nosotros-grid { grid-template-columns: 1fr; }
+  .ayudar-grid { grid-template-columns: 1fr; }
   .servicios-grid { grid-template-columns: 1fr 1fr; }
   .contacto-grid { grid-template-columns: 1fr 1fr; }
   .galeria-grid { grid-template-columns: 1fr 1fr; }
