@@ -396,6 +396,38 @@ label:focus-visible,
 
 .galeria-grid img:hover { transform: scale(1.03); }
 
+.galeria-subtitulo {
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 3rem 0 1.5rem;
+}
+
+.videos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.video-item { margin: 0; }
+
+.video-item video {
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  border-radius: var(--radio);
+  box-shadow: var(--sombra);
+  background-color: var(--azul-oscuro);
+}
+
+.video-item figcaption {
+  margin-top: 0.6rem;
+  text-align: center;
+  font-size: 0.95rem;
+  color: var(--azul-oscuro);
+  font-weight: 600;
+}
+
 /* ============ CONTACTO ============ */
 .contacto-grid {
   display: grid;
@@ -545,5 +577,6 @@ a.tarjeta-contacto:hover { transform: translateY(-6px); }
 
   .seccion { padding: 3rem 0; }
   .servicios-grid, .contacto-grid, .galeria-grid { grid-template-columns: 1fr; }
+  .videos-grid { grid-template-columns: 1fr; max-width: 420px; }
   .beneficios { padding: 1.6rem 1.4rem; }
 }
